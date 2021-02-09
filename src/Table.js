@@ -26,6 +26,11 @@ function TableComp() {
         `http://api.scrapestack.com/scrape?access_key=${access}&url=https://www.live-rates.com/rates`
       );
       if(data.length>1) getTime(data);
+      else{
+        let resAccess='9a3bc5f8c7e2c8c7b20e20487a2a6e0b'
+        getAllInfo(resAccess)
+
+      }
     } catch (err) {
       console.log(err);
       let access='9a3bc5f8c7e2c8c7b20e20487a2a6e0b'
